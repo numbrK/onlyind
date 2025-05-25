@@ -6,7 +6,7 @@ import { commonLog } from '../utils/commonUtils/commonConsole';
 import { catchBlockErrorLog } from '../utils/loggerUtils/catchBlockErrorLog';
 
 // Database connection configuration
-const PG_READ_POOL = new Pool(Object.freeze(CONF.DB_CONFIG_POSTGRES));
+const PG_READ_POOL = new Pool(Object.freeze(CONF.DB_CONFIG_POSTGRES))
 const PG_WRITE_POOL = new Pool(Object.freeze(CONF.DB_CONFIG_POSTGRES));
 
 // Helper function to execute read queries
